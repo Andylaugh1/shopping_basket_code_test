@@ -1,5 +1,25 @@
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 public class ItemTest {
 
+    Item item;
 
+    @Before
+    public void before(){
+        item = new Item("Protein Powder", 20.00, 2.00 );
+    }
+
+    @Test
+    public void canGetName() {
+        assertEquals("Protein Powder", item.getName());
+    }
+
+    @Test
+    public void canGetPrice() {
+        assertEquals(20.00, item.getPrice(), 0.01);
+    }
 
 }
