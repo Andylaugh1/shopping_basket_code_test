@@ -22,4 +22,15 @@ public class ItemTest {
         assertEquals(20.00, item.getPrice(), 0.01);
     }
 
+    @Test
+    public void canGetShippingCost() {
+        assertEquals(2.00, item.getShipping(), 0.01);
+    }
+
+    @Test
+    public void canSetNewName() {
+        item.setName("Chocolate Protein Powder");
+        assertEquals("Chocolate Protein Powder", item.getName());
+    }
+
 }
