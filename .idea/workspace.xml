@@ -49,8 +49,8 @@
       <file leaf-file-name="ItemTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ItemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+            <state relative-caret-position="379">
+              <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
@@ -459,7 +459,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ItemTest.canSetNewPrice">
+  <component name="RunManager" selected="JUnit.ItemTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -490,26 +490,6 @@
       <option name="MAIN_CLASS_NAME" value="ItemTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ItemTest.canGetPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="shopping_basket_code_test_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ItemTest" />
-      <option name="METHOD_NAME" value="canGetPrice" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -569,6 +549,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ItemTest" />
       <option name="METHOD_NAME" value="canSetNewPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ItemTest.canSetNewShippingCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="shopping_basket_code_test_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ItemTest" />
+      <option name="METHOD_NAME" value="canSetNewShippingCost" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -642,19 +642,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetPrice" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetShippingCost" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewName" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewPrice" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetShippingCost" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewName" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewPrice" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewShippingCost" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewPrice" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewName" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetShippingCost" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetPrice" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ItemTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewShippingCost" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewPrice" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewName" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetShippingCost" />
       </list>
     </recent_temporary>
   </component>
@@ -678,6 +678,9 @@
     <history-entry file="ItemTest - 2018.06.11 at 15h 49m 03s.xml">
       <configuration name="ItemTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ItemTest - 2018.06.11 at 21h 43m 11s.xml">
+      <configuration name="ItemTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ItemTest_canGetPrice - 2018.06.11 at 15h 49m 47s.xml">
       <configuration name="ItemTest.canGetPrice" configurationId="JUnit" />
     </history-entry>
@@ -689,6 +692,9 @@
     </history-entry>
     <history-entry file="ItemTest_canSetNewPrice - 2018.06.11 at 21h 41m 56s.xml">
       <configuration name="ItemTest.canSetNewPrice" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ItemTest_canSetNewShippingCost - 2018.06.11 at 21h 43m 06s.xml">
+      <configuration name="ItemTest.canSetNewShippingCost" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -760,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ItemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+        <state relative-caret-position="379">
+          <caret line="44" column="51" lean-forward="false" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />

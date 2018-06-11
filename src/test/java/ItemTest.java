@@ -39,4 +39,10 @@ public class ItemTest {
         assertEquals(25.00, item.getPrice(), 0.01);
     }
 
+    @Test
+    public void canSetNewShippingCost() {
+        item.setShipping(3.00);
+        assertEquals(3.00, item.getShipping(), 0.01);
+    }
+
 }
