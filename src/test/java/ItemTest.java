@@ -45,4 +45,9 @@ public class ItemTest {
         assertEquals(3.00, item.getShipping(), 0.01);
     }
 
+    @Test
+    public void canGetTotalPrice() {
+        assertEquals(22.00, item.getTotalPrice(), 0.01);
+    }
+
 }
