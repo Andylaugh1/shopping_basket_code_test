@@ -33,4 +33,10 @@ public class ItemTest {
         assertEquals("Chocolate Protein Powder", item.getName());
     }
 
+    @Test
+    public void canSetNewPrice() {
+        item.setPrice(25.00);
+        assertEquals(25.00, item.getPrice(), 0.01);
+    }
+
 }
