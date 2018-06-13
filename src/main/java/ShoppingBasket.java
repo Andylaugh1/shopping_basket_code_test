@@ -43,4 +43,9 @@ public class ShoppingBasket {
         }
         return totalShippingPrice;
     }
+
+    public double totalPrice() {
+        double totalPrice = totalShippingPrice() + totalBasketPriceExShipping();
+        return totalPrice;
+    }
 }

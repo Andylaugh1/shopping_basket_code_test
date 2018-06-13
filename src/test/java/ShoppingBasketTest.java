@@ -66,4 +66,11 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(item3);
         assertEquals(5.00, shoppingBasket.totalShippingPrice(), 0.01);
     }
+
+    @Test
+    public void calculateTotalBasketPrice() {
+        shoppingBasket.addItem(item2);
+        shoppingBasket.addItem(item3);
+        assertEquals(41.00, shoppingBasket.totalPrice(), 0.01);
+    }
 }
