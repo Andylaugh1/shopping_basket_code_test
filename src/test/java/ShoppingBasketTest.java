@@ -17,12 +17,19 @@ public class ShoppingBasketTest {
         item2 = new Item("Charger", 10.00, 1.00);
         item3 = new Item("Think and Grow Rich", 6.00, 2.00);
         shoppingBasket = new ShoppingBasket();
+
+        shoppingBasket.addItem(item1);
+    }
+
+    @Test
+    public void canCountItemsInBasket() {
+        assertEquals(1, shoppingBasket.countBasket());
     }
 
     @Test
     public void canAddAnItem() {
-        shoppingBasket.addItem(item1);
-        assertEquals(1, shoppingBasket.countBasket());
+        shoppingBasket.addItem(item2);
+        assertEquals(2, shoppingBasket.countBasket());
     }
 
     @Test
