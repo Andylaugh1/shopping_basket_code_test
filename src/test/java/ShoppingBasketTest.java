@@ -38,4 +38,10 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(item3);
         assertEquals(Arrays.asList(item1, item2, item3), shoppingBasket.getItems());
     }
+
+    @Test
+    public void canRemoveAnItem() {
+        shoppingBasket.removeItem(item1);
+        assertEquals(0, shoppingBasket.countBasket());
+    }
 }
