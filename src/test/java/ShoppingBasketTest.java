@@ -52,4 +52,18 @@ public class ShoppingBasketTest {
         shoppingBasket.emptyBasket();
         assertEquals(0, shoppingBasket.countBasket());
     }
+
+    @Test
+    public void calculateTotalBasketCostExcludingShipping() {
+        shoppingBasket.addItem(item2);
+        shoppingBasket.addItem(item3);
+        assertEquals(36.00, shoppingBasket.totalBasketPriceExShipping(), 0.01);
+    }
+
+    @Test
+    public void calculateTotalShippingCostOfBasket() {
+        shoppingBasket.addItem(item2);
+        shoppingBasket.addItem(item3);
+        assertEquals(5.00, shoppingBasket.totalShippingPrice(), 0.01);
+    }
 }
