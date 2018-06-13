@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2b790e-06d9-4852-a028-a7b1a750892a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ShoppingBasket.java" afterPath="$PROJECT_DIR$/src/main/java/ShoppingBasket.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ShoppingBasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/ShoppingBasketTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -91,14 +90,12 @@
       <file leaf-file-name="ShoppingBasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ShoppingBasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="337">
+              <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#574#575#0" expanded="true" />
                 <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -503,7 +500,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ShoppingBasketTest.canCountItemsInBasket">
+  <component name="RunManager" selected="JUnit.ShoppingBasketTest.canGetItems">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -694,8 +691,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ShoppingBasketTest.canCountItemsInBasket" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ShoppingBasketTest.canGetItems" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ShoppingBasketTest.canGetItems" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ShoppingBasketTest.canCountItemsInBasket" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ItemTest.canGetTotalPrice" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.ItemTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.ItemTest.canSetNewShippingCost" />
@@ -719,9 +716,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ItemTest - 2018.06.11 at 15h 49m 03s.xml">
-      <configuration name="ItemTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ItemTest - 2018.06.11 at 21h 43m 11s.xml">
       <configuration name="ItemTest" configurationId="JUnit" />
     </history-entry>
@@ -747,6 +741,9 @@
       <configuration name="ShoppingBasketTest.canCountItemsInBasket" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ShoppingBasketTest_canGetItems - 2018.06.13 at 15h 07m 06s.xml">
+      <configuration name="ShoppingBasketTest.canGetItems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ShoppingBasketTest_canGetItems - 2018.06.13 at 15h 11m 54s.xml">
       <configuration name="ShoppingBasketTest.canGetItems" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -879,14 +876,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ShoppingBasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="337">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#574#575#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
           </folding>
         </state>
       </provider>

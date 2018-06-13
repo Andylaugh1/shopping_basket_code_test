@@ -34,6 +34,8 @@ public class ShoppingBasketTest {
 
     @Test
     public void canGetItems() {
+        shoppingBasket.addItem(item2);
+        shoppingBasket.addItem(item3);
         assertEquals(Arrays.asList(item1, item2, item3), shoppingBasket.getItems());
     }
 }
