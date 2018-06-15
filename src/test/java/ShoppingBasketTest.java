@@ -33,6 +33,20 @@ public class ShoppingBasketTest {
     }
 
     @Test
+    public void canAddTwoOfSameItem() {
+        shoppingBasket.addItem(item2);
+        shoppingBasket.addItem(item2);
+        assertEquals(3, shoppingBasket.countBasket());
+    }
+
+//    @Test
+//    public void canBuyOneGetOneFree() {
+//        shoppingBasket.addItem(item1);
+//        assertEquals(2, shoppingBasket.countBasket());
+//        assertEquals(22.00, shoppingBasket.totalPrice(), 0.01);
+//    }
+
+    @Test
     public void canGetItems() {
         shoppingBasket.addItem(item2);
         shoppingBasket.addItem(item3);
@@ -73,4 +87,5 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(item3);
         assertEquals(41.00, shoppingBasket.totalPrice(), 0.01);
     }
+
 }

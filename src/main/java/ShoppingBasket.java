@@ -16,8 +16,8 @@ public class ShoppingBasket {
         return items.size();
     }
 
-    public void addItem(Item item) {
-        items.add(item);
+    public void addItem(Item itemToAdd) {
+        items.add(itemToAdd);
     }
 
     public void removeItem(Item item) {
