@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ShoppingBasket {
 
@@ -31,7 +32,12 @@ public class ShoppingBasket {
     public double totalPrice() {
         double totalPrice = 0;
         for (Item item : items){
-            totalPrice += item.getPrice();
+            if (Collections.frequency(items, item) > 1){
+                totalPrice += item.getPrice() / 2;
+            }
+            else {
+                totalPrice += item.getPrice();
+            }
         }
         return totalPrice;
     }

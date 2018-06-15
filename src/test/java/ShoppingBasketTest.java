@@ -68,12 +68,14 @@ public class ShoppingBasketTest {
         assertEquals(36.00, shoppingBasket.totalPrice(), 0.01);
     }
 
-//    @Test
-//    public void calculateBuyOneGetOneFree() {
-//        shoppingBasket.addItem(item1);
-//        shoppingBasket.addItem(item2);
-//        shoppingBasket.buyOneGetOneFree();
-//        assertEquals();
-//    }
+    @Test
+    public void calculateTotalBasketPriceBuyOneGetOneFree(){
+        shoppingBasket.addItem(item1);
+        shoppingBasket.addItem(item2);
+        assertEquals(30.00, shoppingBasket.totalPrice(),0.01);
+        assertEquals(3, shoppingBasket.countBasket());
+
+    }
+
 
 }
