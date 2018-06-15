@@ -13,9 +13,9 @@ public class ShoppingBasketTest {
     @Before
     public void before() {
 
-        item1 = new Item("Protein Powder", 20.00, 2.00);
-        item2 = new Item("Charger", 10.00, 1.00);
-        item3 = new Item("Think and Grow Rich", 6.00, 2.00);
+        item1 = new Item("Protein Powder", 20.00);
+        item2 = new Item("Charger", 10.00);
+        item3 = new Item("Think and Grow Rich", 6.00);
         shoppingBasket = new ShoppingBasket();
 
         shoppingBasket.addItem(item1);
@@ -39,12 +39,6 @@ public class ShoppingBasketTest {
         assertEquals(3, shoppingBasket.countBasket());
     }
 
-//    @Test
-//    public void canBuyOneGetOneFree() {
-//        shoppingBasket.addItem(item1);
-//        assertEquals(2, shoppingBasket.countBasket());
-//        assertEquals(22.00, shoppingBasket.totalPrice(), 0.01);
-//    }
 
     @Test
     public void canGetItems() {
@@ -68,24 +62,18 @@ public class ShoppingBasketTest {
     }
 
     @Test
-    public void calculateTotalBasketCostExcludingShipping() {
-        shoppingBasket.addItem(item2);
-        shoppingBasket.addItem(item3);
-        assertEquals(36.00, shoppingBasket.totalBasketPriceExShipping(), 0.01);
-    }
-
-    @Test
-    public void calculateTotalShippingCostOfBasket() {
-        shoppingBasket.addItem(item2);
-        shoppingBasket.addItem(item3);
-        assertEquals(5.00, shoppingBasket.totalShippingPrice(), 0.01);
-    }
-
-    @Test
     public void calculateTotalBasketPrice() {
         shoppingBasket.addItem(item2);
         shoppingBasket.addItem(item3);
-        assertEquals(41.00, shoppingBasket.totalPrice(), 0.01);
+        assertEquals(36.00, shoppingBasket.totalPrice(), 0.01);
     }
+
+//    @Test
+//    public void calculateBuyOneGetOneFree() {
+//        shoppingBasket.addItem(item1);
+//        shoppingBasket.addItem(item2);
+//        shoppingBasket.buyOneGetOneFree();
+//        assertEquals();
+//    }
 
 }

@@ -28,24 +28,12 @@ public class ShoppingBasket {
         items.clear();
     }
 
-    public double totalBasketPriceExShipping() {
-        double totalPriceExShipping = 0;
-        for (Item item : items){
-            totalPriceExShipping += item.getPrice();
-        }
-        return totalPriceExShipping;
-    }
-
-    public double totalShippingPrice() {
-        double totalShippingPrice = 0;
-        for (Item item : items) {
-            totalShippingPrice += item.getShipping();
-        }
-        return totalShippingPrice;
-    }
-
     public double totalPrice() {
-        double totalPrice = totalShippingPrice() + totalBasketPriceExShipping();
+        double totalPrice = 0;
+        for (Item item : items){
+            totalPrice += item.getPrice();
+        }
         return totalPrice;
     }
+
 }

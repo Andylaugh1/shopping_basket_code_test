@@ -2,13 +2,10 @@ public class Item {
 
     private String name;
     private double price;
-    private double shipping;
 
-    public Item(String name, double price, double shipping){
+    public Item(String name, double price){
         this.name = name;
         this.price = price;
-        this.shipping = shipping;
-
     }
 
     public String getName() {
@@ -19,10 +16,6 @@ public class Item {
         return price;
     }
 
-    public double getShipping() {
-        return shipping;
-    }
-
     public void setName(String newName) {
         this.name = newName;
     }
@@ -31,11 +24,4 @@ public class Item {
         this.price = newPrice;
     }
 
-    public void setShipping(double newShippingCost) {
-        this.shipping = newShippingCost;
-    }
-
-    public double getTotalPrice() {
-        return price + shipping;
-    }
 }
