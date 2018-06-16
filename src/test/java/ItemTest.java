@@ -34,4 +34,22 @@ public class ItemTest {
         assertEquals(25.00, item.getPrice(), 0.01);
     }
 
+    @Test
+    public void canGetSpecialOfferStatus() {
+        assertEquals(false, item.getSpecialOfferStatus());
+    }
+
+    @Test
+    public void canSetOfferStatusToTrue() {
+        item.putOnOffer();
+        assertEquals(true, item.getSpecialOfferStatus());
+    }
+
+    @Test
+    public void canSetOfferStatusBackToFalse() {
+        item.putOnOffer();
+        item.takeOffOffer();
+        assertEquals(false, item.getSpecialOfferStatus());
+    }
+
 }

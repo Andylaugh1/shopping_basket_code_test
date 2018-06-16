@@ -18,7 +18,13 @@ public class ShoppingBasket {
     }
 
     public void addItem(Item itemToAdd) {
-        items.add(itemToAdd);
+        if (itemToAdd.getSpecialOfferStatus() == true){
+            items.add(itemToAdd);
+            items.add(itemToAdd);
+        }
+        else {
+            items.add(itemToAdd);
+        }
     }
 
     public void removeItem(Item item) {
@@ -31,13 +37,8 @@ public class ShoppingBasket {
 
     public double totalPrice() {
         double totalPrice = 0;
-        for (Item item : items){
-            if (Collections.frequency(items, item) > 1){
-                totalPrice += item.getPrice() / 2;
-            }
-            else {
-                totalPrice += item.getPrice();
-            }
+        for (Item item : items) {
+            totalPrice += item.getPrice();
         }
         return totalPrice;
     }

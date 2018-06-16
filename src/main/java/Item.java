@@ -2,10 +2,12 @@ public class Item {
 
     private String name;
     private double price;
+    private boolean isOnSpecialOffer;
 
     public Item(String name, double price){
         this.name = name;
         this.price = price;
+        this.isOnSpecialOffer = false;
     }
 
     public String getName() {
@@ -13,6 +15,9 @@ public class Item {
     }
 
     public double getPrice() {
+        if (isOnSpecialOffer) {
+            return price / 2;
+        }
         return price;
     }
 
@@ -24,4 +29,18 @@ public class Item {
         this.price = newPrice;
     }
 
+
+    public boolean getSpecialOfferStatus() {
+        return isOnSpecialOffer;
+    }
+
+    public void putOnOffer() {
+        isOnSpecialOffer = true;
+    }
+
+    public void takeOffOffer() {
+        if(isOnSpecialOffer == true){
+            isOnSpecialOffer = false;
+        }
+    }
 }
